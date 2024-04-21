@@ -1,0 +1,38 @@
+// Tarea 1
+// Este pseudocodigo tiene como intención mostrar los diferentes casos y condiciones 
+//Solicitadas para la tarea 1
+
+// Definicion de variables 
+
+Definir lista de precio_producto de numeros flotantes 
+Definir descuento_cliente como input de tipo string 
+definor variable num_carrito de tipo entera
+Definir constante descuento_adicional de tipo flotante 
+
+Definir lista_de_descuentos como un diccionario 
+Definir IVA como numero constante 
+Definir precio_descuento como flotante
+Definir precio_final vacia de tipo flotante 
+definir lista de envio de tipo flotante 
+
+// Logica
+
+// Descuento 
+para i desde 0 hasta el largo precio_producto
+leer el producto para obtener el precio_producto[i] 
+	si descuento_cliente[i]  =True 
+		imprimir precio_descuento <-(Lista_descuento[i]*lista_de_descuentos[i])
+		si carrito<2 
+			precio_final<-precio_descuento*IVA
+			imprimir precio_final+envio
+		de lo contrario 
+			precio_final<-(precio_descuento*descuento_adicional)*IVA
+			imprimir precio_final+envio
+	de lo contrario
+		si carrito>1
+			precio_descuento<-precio_producto*constante de descuento adicional 
+			precio_final <-precio_descuento*IVA 
+			imprimir precio_final +envio
+		de lo contrario
+			imprimir "no tiene descuento "
+			imprimir (precio_producto[i]+envio)*IVA 
